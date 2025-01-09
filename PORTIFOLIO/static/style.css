@@ -769,7 +769,9 @@ to {
 
 
 @media (max-width: 480px) {
-
+    .navspace {
+        font-size: 15px;
+    }
     .divisionExper{
         flex-direction: column;
         height: 100vh;
@@ -792,6 +794,6 @@ to {
     .imageWebsiteLeft{
     height: 50vh;
      width: 90vw;
-}
+    }
 
   }
