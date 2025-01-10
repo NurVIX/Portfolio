@@ -11,7 +11,10 @@
     src: url('fonts/GreatVibes-Regular.ttf') format('truetype');
 }
 /* ------------ GLOBAL -------- */
-
+body{
+    font-family: Italiana;
+    color: rgb(105, 100, 100);
+}
 a{
     color: inherit;
     text-decoration: none;
@@ -48,27 +51,20 @@ textarea {
 
 /*-------------- NAV--------------*/
 
-.NurVIX {
-    font-family: FiraCode;
-    color: rgb(255, 255, 255);
-}
+
 .navspace {
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 40px;
-    font-family: Italiana;
+    padding-right: 40%;
     font-size: 25px;
     color: #44413c;
     gap: 40px;
     position: fixed;
     z-index: 1000;
-    width: 100vw;
+    width: 98vw;
     background-image:  linear-gradient(80deg, rgb(160, 211, 211), rgb(235, 194, 160));
-}
-#bodyWork .navspace {
-    color: rgb(255, 255, 255);
 }
 
 .nav-line {
@@ -90,35 +86,30 @@ textarea {
     background-image:  linear-gradient(80deg, rgb(160, 211, 211), rgb(235, 194, 160));
 }
 
-#bodyWork.fullpage {
-    background-image:  linear-gradient(180deg, rgb(163, 143, 109), rgb(165, 167, 152));
-}
+
 #bodyContact.fullpage{
     background: rgb(212, 199, 183);
 }
 
 /* --------INDEX PAGE -----------*/
 
-
+.firstSection{
+    padding-top: 15%;
+    height: 100vh;
+}
 
 .karinnaHeader {
     width: 100%;
-    padding-top: 8%;
-    color: rgb(105, 100, 100);
     text-shadow: rgb(228, 227, 226) 1px 0 10px;
     text-align: center;
-    font-weight: lighter;
     font-size: 130px;
-    font-family: Italiana;
-    position: relative;
+
 }
 .developerHeader{
     width: 100%;
     font-size: 40px;
-    color: rgb(105, 100, 100);
     text-shadow: rgb(228, 227, 226) 1px 0 5px;
-    font-family: Italiana;
-	padding-top: 130px;
+	padding-top: 5%;
     text-align: center;
     position: relative;
 }
@@ -126,16 +117,13 @@ textarea {
 .Menu-link{
     font-size: 50px;
     font-weight: bold;
-    color: rgb(105, 100, 100);
     text-shadow: rgb(228, 227, 226) 1px 0 3px;
-    font-family: Italiana;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10%;
-    padding-top: 10%; 
-    padding-bottom: 150px; 
+    padding-top: 5%;
     position: relative;
 }
 /*---------------CASE STUDIES-----------------*/
@@ -145,7 +133,6 @@ textarea {
 }
 .StudycaseTitle{
     text-align: center;
-    font-family: Italiana;
     font-weight: 800;
     color: rgb(248, 227, 227);
     font-size: 6rem;
@@ -156,7 +143,6 @@ textarea {
     text-align: center;
     color: #fff;
     font-size: 30px;
-    font-family: Italiana;
     padding-left: 10%;
     padding-right: 10%;
     font-weight: 500;
@@ -192,17 +178,16 @@ textarea {
 .Squarespace{
     border:  5px solid rgb(105, 100, 100);
     background-color: #ffffff5f;
-    height: 340px;
+    height: 320px;
     width: 250px;
-    padding: 15px;
-    margin: 20px;
+    padding: 10px;
+
 }
 .experienceTitle{
     width: 100%;
     font-size: 75px;
     color: rgb(105, 100, 100);
     text-shadow: rgb(95, 93, 91) 2px 2px 8px;
-    font-family: Italiana;
     padding-bottom: 10%;
     text-align: center;
 }
@@ -232,20 +217,19 @@ textarea {
     width: 100%;
     font-size: 80px;
     color: rgb(105, 100, 100);
-    font-family: Italiana;
-    font-weight: bold;
+
 }
 .expertisetitle{
-    padding: 60px 80px 30px 80px;
+    padding: 30px 80px 30px 80px;
     color: rgb(105, 100, 100);
-    font-family: Italiana;
+
     font-weight: bold;
     font-size: 25px;
 
 }
 .expertisecontent{
     color: rgb(105, 100, 100);
-    font-family: Italiana;
+
     font-size: 20px;
     padding: 20px;
     text-align: center;
@@ -259,13 +243,13 @@ textarea {
 .IntroTitle{
     text-align: center;
     color: rgb(105, 100, 100);
-    font-family: Italiana;
+    
     font-size: 30px;
 }
 .Worklist{
     width: 100%;
     color: rgb(136, 136, 136);
-    font-family: Italiana;
+    
     font-size: 20px;
     padding: 10px;
     text-align: left;
@@ -308,15 +292,14 @@ textarea {
 }
 .project-title {
     font-size: 50px; 
-    font-weight: bold; 
-    font-family: Italiana;
+    
     color: rgb(105, 100, 100);
     text-align: center;
   }
   
 .project-details-right {
     align-self: center;
-    font-family: Italiana;
+    
     color: rgb(105, 100, 100);
     font-size: 30px;
     position: relative;
@@ -340,7 +323,6 @@ textarea {
     width: 35%;
     padding-left: 15%;
     justify-content: center;
-    font-family: Italiana;
     color: rgb(105, 100, 100);
 }
 .flexRightsideFooter{
@@ -350,12 +332,10 @@ textarea {
     padding-right: 25%;
     justify-content: center;
     align-items: end;
-    font-family: Italiana;
     color: rgb(105, 100, 100);
 }
   .project-details-left{
     align-self: center;
-    font-family: Italiana;
     color:#fff;
     font-size: 30px;
     position: relative;
@@ -366,7 +346,6 @@ textarea {
     text-align: center;
     color:#fff;
     font-size: 25px;
-    font-family: Italiana;
 }
   
 .project-details a {
@@ -384,13 +363,18 @@ text-decoration: underline;
     flex-direction: row;
 }
 .imageWebsiteRight{
-    height: 50vh;
+    height: 60vh;
     width: 50vw;
+    right: 5%;
+    position: relative;
+    
 }
 
 .imageWebsiteLeft{
-   height: 50vh;
+   height: 60vh;
    width: 50vw;
+   left: 5%;
+   position: relative;
 }
 
 .imageCaseStudyLeft{
@@ -418,13 +402,13 @@ text-decoration: underline;
     margin-bottom: 15%;
 }
 .DescTitleStudyCase{
-    font-family: Italiana;
+
     color:#fff;
     font-size: 35px;
     text-align: left;
 }
 .DescStudyCase{
-    font-family: Italiana;
+
     color:#fff;
     font-size: 25px;
     flex-direction: row;
@@ -439,7 +423,6 @@ text-decoration: underline;
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    font-family: Italiana;
     font-size: 24px;
     font-weight: 400;
     display: flex;
@@ -471,15 +454,14 @@ text-decoration: underline;
 
 /*---------------ABOUT PAGE -----------------*/
 .division{
-    flex: auto;
-    padding-top: 250px;
+    padding-top: 15%;
     position: relative;
 }
 .Abouttitle{        
     font-size: 200px;
     font-family: "GreatVibes";
-    color: rgb(228, 227, 226);
     width: 50%;
+    font-weight: 100;
     text-align: end;
     position: relative;
 }
@@ -487,15 +469,10 @@ text-decoration: underline;
     padding: 5% 15% 2% 15%;  
 }
 .AboutSubtitle {
-    
     font-size:40px;
-    font-family: Italiana;
-    color: rgb(228, 227, 226);
 }
 .selfDescription{
-    font-family:Italiana;
     font-size: 25px;
-    color: rgb(228, 227, 226);
     padding-top: 50px;
     text-align: center;
 
@@ -503,10 +480,8 @@ text-decoration: underline;
 }
 .skillsdescription{
     width: 50%;
-    font-family: Italiana;
     font-size: 25px;
     font-weight: light;
-    color: rgb(228, 227, 226);
     float: left;
     display: block;
     padding-left: 2%;
@@ -514,14 +489,12 @@ text-decoration: underline;
 
 .subTitles{
     font-size:40px;
-    font-family: Italiana;
 }
 .divSubTitles{
     display: flex;
     flex-direction: column;
     float: left;
     text-align: left;
-    color: rgb(228, 227, 226);
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -565,14 +538,12 @@ text-decoration: underline;
 }
 .ContactContent{
     width: 100%;
-    font-family:Italiana;
     font-size: 20px;
     padding-bottom: 80px;
     color: rgb(63, 60, 56);
     text-align: center;
 }
 .contactForm {
-    font-family:Italiana;
     font-size: 30px;
     width: 500px;
     color: rgb(63, 60, 56);
@@ -772,6 +743,8 @@ to {
     .navspace {
         font-size: 15px;
     }
+    .nav-line {
+        width: 100px;}
     .divisionExper{
         flex-direction: column;
         height: 100vh;
