@@ -785,4 +785,14 @@ to {
     .StudyCaseSubTitle{
         font-size: 25;
     }
+    .imageCaseStudycenter{
+        width: 100%;
+        left: 15%;
+        position: relative;
+    }
+    .CaseStudyContainer{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
   }
