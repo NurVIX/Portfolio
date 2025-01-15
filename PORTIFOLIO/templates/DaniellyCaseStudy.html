@@ -36,22 +36,28 @@
           <button class="button w-button" type="button">Website Link</button></a
         >
       </div>
-      <div class="CaseStudyImages">
-        <img
-          src="{{ url_for('static', filename='uploads/daniellysideleft.png') }}"
-          alt="albert Web"
-          class="imageCaseStudyLeft"
-        />
-        <img
-          src="{{ url_for('static', filename='uploads/Daniellymainpage.png') }}"
-          alt="albert Web"
-          class="imageCaseStudycenter"
-        />
-        <img
-          src="{{ url_for('static', filename='uploads/daniellysidescreen.png') }}"
-          alt="albert Web"
-          class="imageCaseStudyRight"
-        />
+      <div class="CaseStudyContainer">
+        <div class="CaseStudyEdge">
+          <img
+            src="{{ url_for('static', filename='uploads/daniellysideleft.png') }}"
+            alt="albert Web"
+            class="imageCaseStudyEdges"
+          />
+        </div>
+        <div class="CaseStudyCenter">
+          <img
+            src="{{ url_for('static', filename='uploads/Daniellymainpage.png') }}"
+            alt="albert Web"
+            class="imageCaseStudycenter"
+          />
+        </div>
+        <div class="CaseStudyEdge">
+          <img
+            src="{{ url_for('static', filename='uploads/daniellysidescreen.png') }}"
+            alt="albert Web"
+            class="imageCaseStudyEdges"
+          />
+        </div>
       </div>
       <div class="StudocaseDescriptionSection">
         <div class="StudyCase-desc">
