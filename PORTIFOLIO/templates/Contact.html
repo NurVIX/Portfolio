@@ -10,14 +10,17 @@
       href="{{ url_for('static', filename='style.css') }}"
     />
   </head>
-  <body id="bodyContact" class="fullpage">
-    <div class="navspace">
-      <div class="nav-line"></div>
-      <div class="TWicon">
-        <a href="{{ url_for('indexPage.home') }}">HOME</a>
+  <body class="fullpage">
+    <!-- NAV starts -->
+    <nav class="navspacecontainer">
+      <div class="navspace">
+        <div class="nav-line"></div>
+        <div>
+          <a href="{{ url_for('indexPage.home') }}">HOME</a>
+        </div>
+        <div class="copyright">© | 2024</div>
       </div>
-      <div class="copyright">© | 2024</div>
-    </div>
+    </nav>
     <div class="ContactTitle">Contact me!</div>
     <div class="ContactContent">The best way to get connected with me!</div>
     <div class="contactForm">

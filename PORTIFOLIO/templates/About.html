@@ -10,15 +10,17 @@
       href="{{ url_for('static', filename='style.css') }}"
     />
   </head>
-  <body id="bodyindex" class="fullpage slide-up">
+  <body class="fullpage">
     <!-- NAV starts -->
-    <div class="navspace">
-      <div class="nav-line"></div>
-      <div class="TWicon">
-        <a href="{{ url_for('indexPage.home') }}">HOME</a>
+    <nav class="navspacecontainer">
+      <div class="navspace">
+        <div class="nav-line"></div>
+        <div>
+          <a href="{{ url_for('indexPage.home') }}">HOME</a>
+        </div>
+        <div class="copyright">© | 2024</div>
       </div>
-      <div class="copyright">© | 2024</div>
-    </div>
+    </nav>
     <!-- TITLE starts -->
     <div class="division">
       <h1 class="Abouttitle animated-textUp">About</h1>

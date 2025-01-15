@@ -10,20 +10,26 @@
       href="{{ url_for('static', filename='style.css') }}"
     />
   </head>
-  <body id="bodyWork" class="fullpage">
+  <body class="fullpage">
     <!-- NAV starts -->
-    <div class="navspace">
-      <div class="nav-line"></div>
-      <div class="TWicon">
-        <a href="{{ url_for('indexPage.home') }}">HOME</a>
+    <nav class="navspacecontainer">
+      <div class="navspace">
+        <div class="nav-line"></div>
+        <div>
+          <a href="{{ url_for('indexPage.home') }}">HOME</a>
+        </div>
+        <div class="copyright">© | 2024</div>
       </div>
-      <div class="copyright">© | 2024</div>
-    </div>
+    </nav>
     <!-- BODY OF STUDY CASE starts -->
     <section>
       <div class="StudycaseTitleSection">
         <h1>Albert-Coaching</h1>
-        <h4>This page contains the case study of Albert-coaching website which includes the Project Overview, Tools Used and Live Links to the official product.</h4>
+        <h4>
+          This page contains the case study of Albert-coaching website which
+          includes the Project Overview, Tools Used and Live Links to the
+          official product.
+        </h4>
       </div>
     </section>
   </body>
