@@ -45,7 +45,9 @@ textarea {
     margin-bottom: 15px; 
     height: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+}
+img{
+    height: auto;
 }
 
 /*-------------- NAV--------------*/
@@ -90,9 +92,8 @@ textarea {
 /* --------INDEX PAGE -----------*/
 
 .firstSection{
-    padding-top: 15%;
-    height: 100vh;
-
+    padding-top: 25%;
+    height: 60vh;
 }
 
 .karinnaHeader {
@@ -163,7 +164,7 @@ textarea {
 }
 /*--------------- WORK PAGE ---------------*/
 .ExpertiseSession{
-    height: 100vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     
@@ -271,7 +272,7 @@ textarea {
     align-items: center; /* Centers content horizontally */
     text-align: center; /* Aligns text within the element */
     margin: 0 auto; /* Centers the div itself within its container */
-    height: 100%; /* Ensures the height covers its parent if needed */
+    height: 80vh; /* Ensures the height covers its parent if needed */
 }
 
 .divisionStudycase{
@@ -283,7 +284,7 @@ textarea {
 }
 .divisionTemplatesLeft{
     display: flex;
-    height: 100vh;
+    height: 70vh;
     align-items: center;
 }
 .divisionTemplatesRight{
@@ -366,15 +367,12 @@ text-decoration: underline;
     flex-direction: row;
 }
 .imageWebsiteRight{
-    height: 60vh;
     width: 50vw;
     right: 5%;
     position: relative;
-    
 }
 
 .imageWebsiteLeft{
-   height: 60vh;
    width: 50vw;
    left: 5%;
    position: relative;
@@ -400,18 +398,17 @@ text-decoration: underline;
     margin-bottom: 15%;
 }
 .DescTitleStudyCase{
-
+    text-align: center;
     color:#fff;
     font-size: 35px;
-    text-align: left;
 }
 .DescStudyCase{
     color:#fff;
     font-size: 25px;
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     gap: 4%;
 }
 .TollsIcons{
@@ -748,6 +745,9 @@ to {
         font-size:  80px;
         position: relative;
     }
+    .firstSection{
+        height: 100vh;
+    }
     .developerHeader{
         top: 180px;
         position: relative;
@@ -775,8 +775,8 @@ to {
     }
     .imageWebsiteRight,
     .imageWebsiteLeft{
-    height: 50vh;
-     width: 90vw;
+    height: 40vh;
+    width: 90vw;
     }
     .StudycaseTitle{
         font-size:  80px;
@@ -794,5 +794,10 @@ to {
         display: flex;
         flex-direction: column;
         height: 100vh;
+    }
+    .StudocaseDescriptionSection{
+        margin-top: 15%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
   }

@@ -36,12 +36,8 @@
       <div class="karinnaHeader">Karinna Rocha</div>
       <div class="developerHeader">Software Developer</div>
       <div class="Menu-link">
-        <div>
           <a href="{{ url_for('aboutPage.aboutpage') }}">About</a>
-        </div>
-        <div>
           <a href="{{ url_for('contactPage.contact') }}">Contact</a>
-        </div>
       </div>
     </section>
     <!-- work content -->
@@ -81,22 +77,22 @@
         </div>
         <div class="vertical-line fadein"></div>
         <div class="Worklist">
-          <a class="workTitle" data-scroll="nurvix">HELLEN</a><br />
+          <a class="workTitle" href="#hellen">HELLEN</a><br />
           <span>Web development</span><br />
-          <a class="workTitle" data-scroll="nurvix">ALBERT</a><br />
+          <a class="workTitle" href="#albert">ALBERT</a><br />
           <span>Web development</span><br />
-          <a class="workTitle" data-scroll="fitness">DANIELLY</a><br />
+          <a class="workTitle" href="#danielly">DANIELLY</a><br />
           <span>Web Development</span><br />
-          <a class="workTitle" data-scroll="signup">NURVIX</a><br />
+          <a class="workTitle" href="#nurvix">NURVIX</a><br />
           <span>Web Development</span><br />
-          <a class="workTitle" data-scroll="aibeans">AIBEANS</a><br />
+          <a class="workTitle" href="#aibeans">AIBEANS</a><br />
           <span>Mobile Development</span><br />
         </div>
       </div>
     </section>
     <!-- WEBSITED TEMPLATES STARTS HERE -->
       <section class="divisionStudycase">
-        <div class="divisionTemplatesRight">
+        <div class="divisionTemplatesRight" id = "hellen">
           <img 
               src="{{ url_for('static', filename='uploads/HellenMainPage.png') }}"
               alt="Mercy web"
@@ -109,12 +105,12 @@
             <button class="button w-button" type="button">Case Study</button></a>
           </div>
         </div>
-        <div class="divisionTemplatesLeft">
-            <img 
-              src="{{ url_for('static', filename='uploads/Albertmainpage.png') }}"
-              alt="albert Web"
-              class="imageWebsiteLeft "
-            />
+        <div class="divisionTemplatesLeft" id = "albert">
+              <img 
+                src="{{ url_for('static', filename='uploads/Albertmainpage.png') }}"
+                alt="albert Web"
+                class="imageWebsiteLeft "
+              />
           <div class="ProjectTitleandlink" >
             <span class="project-title">Albert-Coaching</span>
             <br />
@@ -122,7 +118,7 @@
             <button class="button w-button" type="button">Case Study</button></a>
           </div>
         </div>
-        <div class="divisionTemplatesRight">
+        <div class="divisionTemplatesRight" id = "danielly">
           <img 
               src="{{ url_for('static', filename='uploads/Daniellymainpage.png') }}"
               alt="Danielly web"
@@ -135,7 +131,7 @@
             <button class="button w-button" type="button">Case Study</button></a>
           </div>
         </div>
-        <div class="divisionTemplatesLeft">
+        <div class="divisionTemplatesLeft" id = "nurvix">
           <img 
             src="{{ url_for('static', filename='uploads/Nurvixmainpage.png') }}"
             alt="NurVIX Page"
@@ -165,6 +161,22 @@
 </html>
 
 <script>
+
+  document.querySelectorAll('.workTitle').forEach(link => {
+    link.addEventListener('click', function(event){
+      event.preventDefault();
+
+      const targetId = this.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection){
+        targetSection.scrollIntoView({ behavior:'smooth'})
+      }
+    });
+  });
+
+
+
   // JAVASCRIPT FOR SCROLLING AND ANIMATION ON WEB IMAGES
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -202,4 +214,7 @@
     typeWriter(karinnaHeader, "Karinna Rocha", 100);
     typeWriter(developerHeader, "Software Developer", 100);
   };
+
+
+
 </script>

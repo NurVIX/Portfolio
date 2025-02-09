@@ -13,7 +13,7 @@ def contact():
 
         try:
             # Set a no-reply address as the sender
-            no_reply_address = "no-reply@example.com"  # Replace with your no-reply address
+            no_reply_address = "no-reply@example.com" 
 
             # Create the message
             msg = Message(subject, sender=no_reply_address, recipients=["karinna.rocha2@gmail.com"])
